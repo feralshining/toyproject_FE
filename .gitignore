@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# team files
+PROJECT_CONVENTION.md
+PROJECT_STRUCTURE.md
