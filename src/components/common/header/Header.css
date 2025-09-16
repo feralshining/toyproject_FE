@@ -1,0 +1,42 @@
+/* Header Tailwind component styles
+   - Import this file from the Header component or from a global CSS entry
+   - Note: Tailwind must be configured in the project and `@tailwind` directives should live in the global CSS.
+*/
+
+@layer components {
+  .header {
+    @apply flex items-center justify-between px-6 py-3 bg-white shadow-sm;
+  }
+
+  .header__logo {
+    @apply h-10 w-10;
+  }
+
+  .header__search {
+    @apply flex items-center bg-gray-100 rounded-md px-3 py-1 gap-2 w-80;
+  }
+
+  .header__search-input {
+    @apply text-sm text-gray-600 placeholder-gray-400 w-full;
+  }
+
+  .header__nav {
+    @apply flex items-center gap-4;
+  }
+
+  .header__nav-button {
+    @apply text-sm text-gray-700 hover:text-gray-900 px-3 py-1 rounded;
+  }
+
+  .header__dropdown {
+    @apply flex items-center gap-1 cursor-pointer;
+  }
+
+  .header__auth {
+    @apply ml-4;
+  }
+
+  .header__auth-button {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm font-medium;
+  }
+}

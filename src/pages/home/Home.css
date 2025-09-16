@@ -1,0 +1,9 @@
+.main-page {
+  align-items: center;
+  background-color: var(--1-background-first);
+  border: 1px solid;
+  border-color: #0000001a;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
