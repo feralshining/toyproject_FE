@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Logo from '../../components/layout/header/logo/Logo';
 import SearchBar from '../../components/layout/header/searchBar/SearchBar';
+import NavigationBar from '../../components/layout/header/navigationBar/NavigationBar';
 
 function Home(){
     return (
@@ -9,6 +10,7 @@ function Home(){
             <div className='header-container'>
                 <Logo />
                 <SearchBar />
+                <NavigationBar />
             </div>
             <div className='main-container'>
                 홈 화면입니다.
