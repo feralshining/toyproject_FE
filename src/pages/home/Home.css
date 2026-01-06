@@ -1,9 +1,26 @@
-.main-page {
-  align-items: center;
-  background-color: var(--1-background-first);
-  border: 1px solid;
-  border-color: #0000001a;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+/* 뷰포트: 브라우저에서 보이는 영역 */
+/* position에 대하여
+    static: 기본 위치 지정 방식 (기본값)
+    absolute: 부모 요소를 기준으로 위치 지정
+    relative: 자기 자신을 기준으로 위치 지정
+    fixed: 뷰포트를 기준으로 위치 지정
+*/
+
+.home-container {
+  width: 100vw; /* 화면 가로 전체 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  width: 100%; /* 화면 전체 너비 */
+  height: 85px;
+  display: flex; /* 헤더를 가로로 배치 */
+  border-bottom: 1px solid #000000; /* 헤더 하단에 경계선 추가 */
+  background: #ffffff;
+  padding: 12px 24px; /* 상하 12px, 좌우 24px 여백 */
+  box-sizing: border-box; /* padding 포함한 크기 계산 */
 }

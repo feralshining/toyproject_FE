@@ -1,15 +1,23 @@
 import React from 'react';
 import './Home.css';
-import Header from '../../components/common/header/Header.tsx';
+import Logo from '../../components/layout/header/logo/Logo';
+import SearchBar from '../../components/layout/header/searchBar/SearchBar';
 
-const Home: React.FC = () => {
+function Home(){
     return (
-        <div className='main-page'>
-            <Header />
-            {/* <Main />
-            <Footer /> */}
+        <div className='home-container'>
+            <div className='header-container'>
+                <Logo />
+                <SearchBar />
+            </div>
+            <div className='main-container'>
+                홈 화면입니다.
+            </div>
+            <div className='footer-container'>
+                푸터 영역
+            </div>
         </div>
     );
-};
+}
 
 export default Home;
