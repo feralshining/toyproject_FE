@@ -1,13 +1,11 @@
-import React from 'react';
+import '/src/styles/Fonts.css';
 import './NavigationBar.css';
 
 function NavigationBar() {
     return (
         <div className='navigationBar-container'>
             <button className='nav-button'>공지사항</button>
-            
-            {/* 게시판은 Dropdown 형식 */}
-            <div className='nav-dropdown'>
+            <div className='nav-r'>
                 <button className='nav-button'>게시판</button>
                 <img src="dropdown-arrow.png" className='dropdown-button'/>
             </div>

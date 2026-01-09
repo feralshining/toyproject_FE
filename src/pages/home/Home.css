@@ -17,10 +17,11 @@
 
 .header-container {
   width: 100%; /* 화면 전체 너비 */
-  height: 85px;
+  height: 3.3125rem;
   display: flex; /* 헤더를 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
   border-bottom: 1px solid #000000; /* 헤더 하단에 경계선 추가 */
   background: #ffffff;
-  padding: 12px 24px; /* 상하 12px, 좌우 24px 여백 */
+  padding: .75rem 1.5rem; /* 상하 12px, 좌우 24px 여백 */
   box-sizing: border-box; /* padding 포함한 크기 계산 */
 }

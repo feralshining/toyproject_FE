@@ -2,12 +2,13 @@
   display: flex; /* 로고를 가로로 배치 */
   align-items: center; /* 세로 중앙 정렬 */
   cursor: pointer; /* 마우스 커서가 올려졌을 때 포인터로 변경 */
-  margin-top: 1.5px;
-  margin-left: 100px;
+  margin-top: 0.1rem;
+  margin-left: clamp(13rem, 5vw, 60rem); /* clamp(최소값, 뷰포트 너비에 따른 가변값, 최대값) 5vw = 뷰포트 너비의 5% */
 }
 
 .logo-image {
-  width: 30px;
-  height: 30px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   object-fit: contain; /* 이미지 비율 유지하며 크기 조정 */
+  font-family: 'GMarketSans';
 }
