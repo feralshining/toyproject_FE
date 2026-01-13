@@ -25,3 +25,13 @@
   padding: .75rem 1.5rem; /* 상하 12px, 좌우 24px 여백 */
   box-sizing: border-box; /* padding 포함한 크기 계산 */
 }
+
+.footer-container {
+  width: 100%; /* 화면 전체 너비 */
+  display: flex; /* 헤더를 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  border-top: 1px solid #000000; /* 헤더 하단에 경계선 추가 */
+  padding: 2rem 20rem;
+  box-sizing: border-box; /* padding 포함한 크기 계산 */
+  gap: 2rem;
+}
