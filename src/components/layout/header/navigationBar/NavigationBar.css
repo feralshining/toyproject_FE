@@ -7,6 +7,7 @@
   left: 10rem;
 }
 
+/* 네비게이션 바 버튼 스타일 */
 .nav-button {
   background: none; /* 버튼 배경 제거 */
   border: none; /* 버튼 테두리 제거 */
@@ -15,17 +16,67 @@
   font-family: var(--font-gmarket-sans); /* root에 정의된 변수 사용 */
   font-weight: 300;
 }
-
 .nav-button:hover {
   color: #007bff; /* 호버 시 색상 변경 */
 }
 
-.dropdown-button {
-  background: none;
-  border: none;
-  padding: 0.0625rem;
+/* 드롭다운 메뉴 스타일 */
+.nav-dropdown-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* 드롭다운 트리거 스타일 */
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.dropdown-button:hover {
-  color: #007bff;
+/* 드롭다운 화살표 아이콘 스타일 */
+.dropdown-arrow {
+  padding-left: .3125rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  object-fit: contain;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-item {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none; /* 기본 마커 (불릿 포인트) 제거 */
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+  min-width: 8rem; /* 최소 너비 설정 */
+  z-index: 1000; /* 요소의 쌓임 순서를 제어함. 클 수록 위에 표시됨. */
+}
+
+/* 드롭다운 메뉴 보이기 */
+.dropdown-item.show{
+  display: block;
+}
+
+.dropdown-item li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: var(--font-gmarket-sans);
+  font-weight: 300;
 }
