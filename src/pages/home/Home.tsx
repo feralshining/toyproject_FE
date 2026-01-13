@@ -1,8 +1,8 @@
-import React from 'react';
 import './Home.css';
 import Logo from '../../components/layout/header/logo/Logo';
 import SearchBar from '../../components/layout/header/searchBar/SearchBar';
 import NavigationBar from '../../components/layout/header/navigationBar/NavigationBar';
+import AuthButton from '../../components/layout/header/authButton/AuthButton';
 import InnerFooterFrame from '../../components/layout/footer/innerFooterFrame/InnerFooterFrame';
 
 const footerData: string[][] = [
@@ -18,6 +18,7 @@ function Home(){
                 <Logo />
                 <SearchBar />
                 <NavigationBar />
+                <AuthButton />
             </div>
             <div className='main-container'>
                 홈 화면입니다.
