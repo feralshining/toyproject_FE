@@ -1,0 +1,16 @@
+.authButton-container {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+      left: 12rem;
+}
+
+.auth-button {
+    padding: 0.3rem 2rem; /* 이 속성은 버튼의 내부 여백을 설정합니다. 상하 0.3rem, 좌우 2rem */
+    border: 1px solid #646464;
+    border-radius: .3125rem;
+    font-family: var(--font-gmarket-sans);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+}

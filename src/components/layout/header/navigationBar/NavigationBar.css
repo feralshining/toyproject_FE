@@ -60,7 +60,7 @@
 }
 
 /* 드롭다운 메뉴 보이기 */
-.dropdown-item.show{
+.dropdown-item.show{ /* dropdown-item AND show 클래스를 가진 요소 */
   display: block;
 }
 
